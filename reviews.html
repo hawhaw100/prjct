@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+    <body class="reviewbg">
+        <div class="review-widget">
+            <header>
+                <h1>Reviews</h1>
+            <nav>
+                <input type="checkbox" id="check" class="checkbtn">
+                <label for="check">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <a href="#" class="logo">GD</a>
+                <ul>
+                    <li><a href="project.html">Home </li></a>
+                    <li><a href="menu.html">Menu </li></a>
+                    <li><a href="booking.html">Booking</a> </li>
+                    <li><a href="reviews.html">Reviews </a></li>
+                    <li><a href="about.html">About</a> </li>
+                </ul>
+            </nav>
+            </header>
+            <div class="review-grid" id = "reviewsGrid">
+                <div class="review-card">
+
+                            <h3>John Doe</h3>
+                            <p>Great place to enjoy your evening at.</p>
+                            <span>Google</span>
+                        </div>
+                    </div>
+              <div class="add-review-section">
+                <h2>Add your review</h2>
+                <form id="reviewForm">
+                    <input type="text" id="userName" placeholder="Your name" required/>
+                    <textarea id="userReview" placeholder="Your review" rows="4" required></textarea>
+                    <select id="userRating" required>
+                        <option value="" disabled selected>Rating</option>
+                        <option value="5">5 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="2">2 Stars</option>
+                        <option value="1">1 Star</option>
+                    </select>
+                    <button type="submit">Submit</button>
+                </form>
+              </div>
+        </div>
+       
+        
+        <script src="script.js"></script>
+    </body>
+</html>
