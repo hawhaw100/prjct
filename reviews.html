@@ -8,51 +8,83 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     </head>
     <body class="reviewbg">
-        <div class="review-widget">
-            <header>
-                <h1>Reviews</h1>
-            <nav>
+           <div>
+            <img src="images/logo_processed.png" class ="logo1">
+        <nav>
                 <input type="checkbox" id="check" class="checkbtn">
                 <label for="check">
                     <i class="fas fa-bars"></i>
                 </label>
-                <a href="#" class="logo">GD</a>
                 <ul>
-                    <li><a href="project.html">Home </li></a>
-                    <li><a href="menu.html">Menu </li></a>
+                    <li><a href="project.html">Home </a></li>
+                    <li><a href="menu.html">Menu</a> </li>
                     <li><a href="booking.html">Booking</a> </li>
                     <li><a href="reviews.html">Reviews </a></li>
                     <li><a href="about.html">About</a> </li>
                 </ul>
             </nav>
-            </header>
-            <div class="review-grid" id = "reviewsGrid">
-                <div class="review-card">
+        </div> 
+          <div class="reviews">
+            <div class="inner">
+                <h1>The Grand Reviews</h1>
+                <div class="reviews-border"></div>
+                <p class="about-p">Check what our customers are saying!</p>
+                <div class="row">
+                        <div class="col">
+                            <div class="review">
+                                <img src="images\p1.jpg" alt="person">
+                                <div class="name">Emma T.</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i> 
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p>
+                                    "As a huge One Piece fan, I was blown away by the creativity here. The 'Ice Kingdom' course was rich and flavorful, and the presentation was so unique. The only down side? I want to try everything on the menu, and there's so much I can eat in one visit. Guess I'll have to keep coming back!"
+                                </p>
+                               </div>
+                        </div>
 
-                            <h3>John Doe</h3>
-                            <p>Great place to enjoy your evening at.</p>
-                            <span>Google</span>
+                        <div class="col">
+                            <div class="review">
+                                <img src="images\p2.jpg" alt="person">
+                                <div class="name">Liam K.</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i> 
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <p>
+                                    "The dishes are bursting with creativity and flavor. The 'Gomu Gomu Salad' was springy and fun,and the 'Mera Mera no Mi' had just the right amount of fire. It's like eating a Devil Fruit without the risk of drowning! Can't wait to come back for more!" 
+                                </p>
+                               </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="review">
+                                <img src="images\p1.jpg" alt="person">
+                                <div class="name">Sophia R.</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i> 
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <p>
+                                    "This restaurant is a dream come true for any One Piece fan. From the decor to the food names, everything screams adventure. The 'Earthquake Beef' course was tender and flavorful, and the 'Dark Mist Cocktail' was the perfect sweet ending. I half-expected Luffy to burst throught the door at any moment. Highly recommend!"
+                                </p>
+                               </div>
+                        </div>
                         </div>
                     </div>
-              <div class="add-review-section">
-                <h2>Add your review</h2>
-                <form id="reviewForm">
-                    <input type="text" id="userName" placeholder="Your name" required/>
-                    <textarea id="userReview" placeholder="Your review" rows="4" required></textarea>
-                    <select id="userRating" required>
-                        <option value="" disabled selected>Rating</option>
-                        <option value="5">5 Stars</option>
-                        <option value="4">4 Stars</option>
-                        <option value="3">3 Stars</option>
-                        <option value="2">2 Stars</option>
-                        <option value="1">1 Star</option>
-                    </select>
-                    <button type="submit">Submit</button>
-                </form>
-              </div>
-        </div>
-       
-        
+                
+            </div>
+          </div>
         <script src="script.js"></script>
     </body>
 </html>
