@@ -66,7 +66,7 @@
 .home video{
     z-index: -100;
     position: absolute;
-    top:    0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -75,7 +75,6 @@
 body.aboutbg{
    
     background-image: url(images/aboutbg.jpg);
-    
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed
@@ -117,7 +116,7 @@ form{
     flex-direction: column;
     align-items: center;
     justify-content: center ;
-    gap: 2rem;
+    gap: 32px;
   
 }
 
@@ -209,10 +208,6 @@ margin-top: 10px;
 .details{
     padding: 20px 10px;
 }
-.details-sub{
-    display: grid;
-    grid-template-columns: auto auto;
-}
 .details-sub h2{
     font-weight: 600;
     font-size: 28px;
@@ -274,7 +269,6 @@ nav ul {
 
 nav ul li{ 
     margin: 50px 0;
-    line-height: 30px;
 }
 
 nav ul li a{
@@ -436,23 +430,17 @@ border-radius: 5px;
     margin-bottom: 20px;
 }
 
-
-
 .footer .social-media,
 .footer .links,
 .footer .footer-details
 {
-   
     flex: 1 1 220px;
 }
-
 .footer h4{
     margin-bottom: 15px;
-   
 }
 .footer p{
     margin-bottom: 10px;
-    line-height:1.5;
 }
 .footer a{
     color: #000;
@@ -476,7 +464,7 @@ footer {
 .footer-content{
     display:flex;
     justify-content: space-between;
-   flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 footer hr{
     border:0.5px solid #fff;
@@ -513,7 +501,7 @@ footer hr{
 }
 .about-heading p{
     font-size: 25px;
-    color: #000000;
+    color: black;
     margin-bottom: 40px;
 }
 .about-container{
@@ -533,7 +521,7 @@ footer hr{
 .about-content2 p{
    background-color: rgba(250, 235, 215, 0.829);
     padding: 10px;
-    border: 1px solid #000000;
+    border: 1px solid black;
     font-size: 25px;
 }
 span{
@@ -712,10 +700,77 @@ span{
     outline: none;
     transition: 0.3s;
     border: 2px solid black;
+    border-radius: 6px;
     background-color: #fff;
     font-size: 30px;
 }
 .mbtn:hover{
     background: darkred;
     color:#fff;
+}
+
+#reviewform {
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0 , 0 , 0, 0.1);
+}
+#reviewfrom label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+#reviewform input , #reviewform textarea{
+    width: 100%;
+    padding: 10px;
+    border:1px solid black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+#reviewform textarea{
+    resize:vertical
+}
+#reviewform button{
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+#reviewform button[type="submit"]{
+    color: #fff;
+    background-color: darkred;
+}
+#reviewform button#reviewbutton{
+    color: #fff;
+    background-color: darkred;
+}
+#reviewcontainer{
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    border:1px solid black ;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+#reviewcontainer h2{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+#reviewsList {
+    list-style-type: none;
+    padding: 0;
+}
+#reviewsList li{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+#reviewsList li strong {
+    font-weight: bold;
+    color: black;
 }
